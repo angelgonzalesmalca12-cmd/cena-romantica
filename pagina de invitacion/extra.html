@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Una cena especial para ti - Foto</title>
+    <style>
+        body {
+            background-color: #fff0f3;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .contenedor-imagen {
+            margin: 30px auto;
+            perspective: 1000px;
+        }
+        .carta-postal {
+            max-width: 90%;
+            width: 450px; /* Se adapta al tamaño original de tu foto */
+            height: auto;
+            background-color: #ffffff;
+            padding: 15px 15px 40px 15px; /* Estilo polaroid */
+            border-radius: 4px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15), 0 3px 10px rgba(0, 0, 0, 0.1); 
+            transform: rotate(-3deg); 
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+        .carta-postal:hover {
+            transform: rotate(0deg) scale(1.03) translateY(-10px); 
+            box-shadow: 0 20px 35px rgba(217, 4, 41, 0.2), 0 10px 20px rgba(0, 0, 0, 0.15); 
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="contenedor-imagen">
+            <!-- Tu imagen de WhatsApp con el diseño de carta aplicado -->
+            <img class="carta-postal" src="MULTIMEDIA/WhatsApp Image 2026-10-01 at 9.04.42 PM.jpeg" alt="Reloj">
+        </div>
+    </main>
+</body>
+</html>

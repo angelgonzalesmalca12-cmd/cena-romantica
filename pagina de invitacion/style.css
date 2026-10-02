@@ -1,0 +1,26 @@
+.contenedor-imagen {
+    margin: 30px auto;
+    perspective: 1000px; /* Le da profundidad al efecto */
+}
+
+.carta-postal {
+    width: 250px; /* Tamaño ideal para la foto */
+    height: auto;
+    background-color: #ffffff; /* El fondo blanco que simula el papel */
+    padding: 15px 15px 40px 15px; /* Espacio abajo más ancho para simular una polaroid/postal */
+    border-radius: 4px; /* Bordes ligeramente suaves */
+    
+    /* Sombra suave para que parezca que flota sobre la página */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15), 0 3px 10px rgba(0, 0, 0, 0.1); 
+    
+    /* Una pequeña inclinación para que se vea más natural y juguetona */
+    transform: rotate(-3deg); 
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+}
+
+/* Efecto mágico cuando pones el cursor encima de la carta */
+.carta-postal:hover {
+    transform: rotate(0deg) scale(1.05) translateY(-10px); /* Se endereza, crece y sube un poco */
+    box-shadow: 0 20px 35px rgba(217, 4, 41, 0.2), 0 10px 20px rgba(0, 0, 0, 0.15); /* Sombra con un toque rosa */
+}
